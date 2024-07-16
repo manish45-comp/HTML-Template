@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            rotate: {
+              30: "30deg",
+            },
+            colors: {
+              primary: "#20FFC5",
+              secondary: "#8D44FF",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-zinc-950 relative">
+    <!-- navbar -->
+    <nav class="h-[98px] fixed top-0 w-full backdrop-blur">
+      <div
+        class="px-5 md:px-0 container mx-auto h-full flex items-center justify-between"
+      >
+        <div class="logo">
+          <svg
+            id="logo-38"
+            width="78"
+            height="32"
+            viewBox="0 0 78 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M55.5 0H77.5L58.5 32H36.5L55.5 0Z"
+              class="ccustom"
+              fill="#ffffff"
+            ></path>
+            <path
+              d="M35.5 0H51.5L32.5 32H16.5L35.5 0Z"
+              class="ccompli1"
+              fill="#ffffff"
+            ></path>
+            <path
+              d="M19.5 0H31.5L12.5 32H0.5L19.5 0Z"
+              class="ccompli2"
+              fill="#ffffff"
+            ></path>
+          </svg>
+        </div>
+        <div class="hidden md:block">
+          <ul class="flex items-center justify-between gap-5">
+            <li class="link1 navLink text-white cursor-pointer">
+              Grow Your Playlist
+            </li>
+            <li class="link2 navLink text-white cursor-pointer">Say Hello</li>
+          </ul>
+        </div>
+        <div class="md:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 text-white"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+      </div>
+    </nav>
+    <!-- hero section -->
+    <div
+      class="hero container mx-auto h-screen flex flex-col gap-3 md:gap-5 items-center justify-center"
+    >
+      <div class="flex items-center justify-center">
+        <h1 class="fadeUp text-3xl md:text-6xl text-white">Our job is</h1>
+      </div>
+      <div class="flex items-center justify-center">
+        <h2 class="fadeUp2 font-bold text-4xl md:text-6xl text-primary">
+          to get songs heard.
+        </h2>
+      </div>
+      <div class="flex items-center justify-center mt-5 md:mt-0">
+        <p class="fadeUp3 text-xl md:text-3xl text-white">
+          Marketing for the Music Industry
+        </p>
+      </div>
+      <div
+        class="fadeUp4 w-full px-4 flex flex-col md:px-0 md:w-auto md:flex-row md:items-center md:justify-center gap-4 mt-10"
+      >
+        <button
+          class="flex-1 btn bg-black text-primary text-md md:text-xl py-2 px-7 rounded-full flex items-center justify-center gap-5"
+        >
+          YouTube
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+        </button>
+        <button
+          class="flex-1 btn bg-black text-primary text-md md:text-xl py-2 px-7 rounded-full flex items-center justify-center gap-5"
+        >
+          Reels
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+        </button>
+        <button
+          class="flex-1 btn bg-black text-primary text-md md:text-xl py-2 px-7 rounded-full flex items-center justify-center gap-5"
+        >
+          Spotify
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <img
+        class="h-screen w-full absolute top-0 left-0 bottom-0 right-0 object-cover"
+        src="./crowd.jpg"
+        autoplay
+        muted
+        loop
+      />
+    </div>
+
+    <div class="relative">
+      <div
+        class="container mx-auto flex flex-col items-center justify-top gap-2 md:gap-5 py-20 text-center"
+      >
+        <p class="text-white text-2xl md:text-5xl">
+          You choose the territories,<br class="md:hidden block" />
+          we <br class="hidden md:block" />
+          <span class="md:leading-loose"
+            >identify your future <br class="md:hidden block" />listeners
+            there.</span
+          >
+        </p>
+        <p class="text-primary font-bold text-2xl md:text-5xl">
+          We are market explorers.
+        </p>
+      </div>
+    </div>
+
+    <div class="pill_container container mx-auto relative">
+      <!-- pill -->
+      <div class="container px-3 md:px-0 mx-auto h-20 overflow-hidden">
+        <div class="flex pill-box-1 gap-2 items-center justify-start">
+          <div
+            class="pill pill-1 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Results
+          </div>
+          <div
+            class="pill pill-2 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            View
+          </div>
+          <div
+            class="pill pill-3 col-start-2 row-start-2 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Listeners
+          </div>
+          <div
+            class="pill pill-4 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Traffic
+          </div>
+          <div
+            class="pill pill-5 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            <span class="whitespace-nowrap"> target audience </span>
+          </div>
+          <div
+            class="pill pill-6 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Viral
+          </div>
+          <div
+            class="pill pill-7 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Visibility
+          </div>
+          <div
+            class="pill pill-8 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Engagement
+          </div>
+          <div
+            class="pill pill-9 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Fanbase
+          </div>
+          <div
+            class="pill pill-10 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Optimization
+          </div>
+          <div
+            class="pill pill-11 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Results
+          </div>
+          <div
+            class="pill pill-12 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            View
+          </div>
+        </div>
+      </div>
+      <!-- pill -->
+      <div class="container px-3 md:px-0 mx-auto h-20 overflow-hidden">
+        <div class="pill-box-2 flex gap-2 items-center justify-start">
+          <div
+            class="pill pill-1 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Results
+          </div>
+          <div
+            class="pill pill-2 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            View
+          </div>
+          <div
+            class="pill pill-3 col-start-2 row-start-2 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Listeners
+          </div>
+          <div
+            class="pill pill-4 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Traffic
+          </div>
+          <div
+            class="pill pill-5 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            <span class="whitespace-nowrap"> target audience </span>
+          </div>
+          <div
+            class="pill pill-6 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Viral
+          </div>
+          <div
+            class="pill pill-7 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Visibility
+          </div>
+
+          <div
+            class="pill pill-8 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Engagement
+          </div>
+          <div
+            class="pill pill-9 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Fanbase
+          </div>
+          <div
+            class="pill pill-10 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Optimization
+          </div>
+          <div
+            class="pill pill-11 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Results
+          </div>
+          <div
+            class="pill pill-12 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            View
+          </div>
+        </div>
+      </div>
+      <!-- pill -->
+      <div class="container px-3 md:px-0 mx-auto h-20 overflow-hidden">
+        <div class="pill-box-3 flex gap-2 items-center justify-start">
+          <div
+            class="pill pill-1 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Results
+          </div>
+          <div
+            class="pill pill-2 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            View
+          </div>
+          <div
+            class="pill pill-3 col-start-2 row-start-2 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Listeners
+          </div>
+          <div
+            class="pill pill-4 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Traffic
+          </div>
+          <div
+            class="pill pill-5 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            <span class="whitespace-nowrap"> target audience </span>
+          </div>
+          <div
+            class="pill pill-6 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Viral
+          </div>
+          <div
+            class="pill pill-7 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Visibility
+          </div>
+
+          <div
+            class="pill pill-8 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Engagement
+          </div>
+          <div
+            class="pill pill-9 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Fanbase
+          </div>
+          <div
+            class="pill pill-10 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Optimization
+          </div>
+          <div
+            class="pill pill-11 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            Results
+          </div>
+          <div
+            class="pill pill-12 border-2 border-zinc-500 rounded-full text-2xl text-zinc-500 px-5 py-3 flex items-center justify-center"
+          >
+            View
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cards -->
+    <div
+      class="container mt-32 text-center mx-auto flex flex-col items-center justify-center"
+    >
+      <p class="text-3xl md:text-5xl text-white">MarketWise Solutions</p>
+      <!-- pending -->
+    </div>
+
+    <div class="container mx-auto mt-80">
+      <div class="text-center grid gap-3">
+        <div
+          class="text-secondary text-3xl md:text-5xl font-bold md:tracking-wide px-2"
+        >
+          <p>We don't waste your budget doing testing</p>
+          <p
+            class="text-white text-2xl md:text-5xl md:leading-normal mt-5 md:mt-2"
+          >
+            <span class="font-normal md:font-light"
+              >We base our service on pre-tested audience
+              <br class="hidden md:block" />
+              and content strategies, doing continuous
+              <br class="hidden md:block" />experimentation
+              <span class="underline underline-offset-8">
+                but with our own funds.
+              </span></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- teams -->
+    <div class="container mx-auto mt-72">
+      <div
+        class="font-light text-5xl text-white flex gap-2 items-center justify-center"
+      >
+        The
+        <span>
+          <svg
+            id="logo-38"
+            width="78"
+            height="32"
+            viewBox="0 0 78 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M55.5 0H77.5L58.5 32H36.5L55.5 0Z"
+              class="ccustom"
+              fill="#838383"
+            ></path>
+            <path
+              d="M35.5 0H51.5L32.5 32H16.5L35.5 0Z"
+              class="ccompli1"
+              fill="#b6b6b6"
+            ></path>
+            <path
+              d="M19.5 0H31.5L12.5 32H0.5L19.5 0Z"
+              class="ccompli2"
+              fill="#ffffff"
+            ></path></svg
+        ></span>
+        Team
+      </div>
+    </div>
+
+    <!-- need to be updated -->
+    <div class="container mx-auto mt-20">
+      <div class="flex items-center gap-10">
+        <div class="overflow-hidden rounded-xl">
+          <img
+            src="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_960_720.jpg"
+            alt=""
+          />
+        </div>
+        <div class="overflow-hidden rounded-xl">
+          <img
+            src="https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_1280.jpg"
+            alt=""
+          />
+        </div>
+        <div class="overflow-hidden rounded-xl">
+          <img
+            src="https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto mt-80">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div
+          class="px-5 md:px-0 flex items-center justify-start md:items-start md:justify-end"
+        >
+          <h1 class="text-white text-3xl md:text-5xl">
+            Industry leaders,<br class="" />
+            <span class="text-primary md:leading-relaxed"
+              >with a human touch.</span
+            >
+          </h1>
+        </div>
+
+        <div class="px-5 md:px-0 flex flex-col gap-10 w-96">
+          <p
+            class="text-white text-xl md:text-2xl font-extralight tracking-wider"
+          >
+            Our personalized approach values
+            <span class="underline underline-offset-4"> human connection,</span>
+            while our dedicated campaign managers track your evolving journey.
+          </p>
+          <p
+            class="text-white text-xl md:text-2xl font-extralight tracking-wider"
+          >
+            We nurture your creativity, identify promotion opportunities, and
+            amplify your music's reach to the right audience, at the right time
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- pills animation  -->
+    <div class="container mx-auto mt-32 md:mt-80">
+      <div
+        class="flex items-center justify-center flex-wrap xl:px-96"
+        id="demo"
+      >
+        <div
+          id="animateElement1"
+          class="border border-4 border-white rounded-full inline-block px-3 py-1 md:px-5 md:py-2"
+        >
+          <p class="text-white text-2xl md:text-4xl text-nowrap">WE ARE</p>
+        </div>
+        <div
+          id="animateElement2"
+          class="border border-4 bg-white border-white rounded-full inline-block px-3 py-1 md:px-5 md:py-2"
+        >
+          <p class="text-black text-2xl md:text-4xl">BACKING</p>
+        </div>
+        <div
+          id="animateElement3"
+          class="border border-4 rounded-full inline-block px-3 py-1 md:px-5 md:py-2"
+        >
+          <p class="text-white text-2xl md:text-4xl text-nowrap">
+            THE MARKETING
+          </p>
+        </div>
+        <div
+          id="animateElement4"
+          class="border border-4 bg-white border-white rounded-full inline-block px-3 py-1 md:px-5 md:py-2"
+        >
+          <p class="text-black text-2xl md:text-4xl">EFFECT</p>
+        </div>
+        <div
+          id="animateElement5"
+          class="border border-4 border-white rounded-full inline-block px-3 py-1 md:px-5 md:py-2"
+        >
+          <p class="text-white text-2xl md:text-4xl text-nowrap">OF BOOMING</p>
+        </div>
+        <div
+          id="animateElement6"
+          class="border bg-white border-4 rounded-full inline-block px-5 py-2"
+        >
+          <p class="text-black text-2xl md:text-4xl">ARTISTS</p>
+        </div>
+        <div
+          id="animateElement8"
+          class="border border-4 border-white rounded-full inline-block px-3 py-1 md:px-5 md:py-2"
+        >
+          <p class="text-white text-2xl md:text-4xl text-nowrap">THAT YOU</p>
+        </div>
+        <div
+          id="animateElement9"
+          class="border border-4 bg-white border-white rounded-full inline-block px-3 py-1 md:px-5 md:py-2"
+        >
+          <p class="text-black text-2xl md:text-4xl text-nowrap">HAVE HEARD.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto mt-32 md:mt-80">
+      <div class="px-5 md:px-0">
+        <h1
+          class="text-white text-4xl md:text-6xl font-semibold text-start md:text-center"
+        >
+          <span class="text-secondary">Our solutions</span> work for every stage
+          <br />
+          of your career or music company.
+        </h1>
+        <p
+          class="text-zinc-500 text-2xl font-semibold md:font-normal md:text-3xl text-start md:text-center mt-10"
+        >
+          Our work is actually requested by Record Labels, Music <br />
+          Distributors and PR Companies that you have probably seen...
+        </p>
+      </div>
+      <div
+        class="flex items-center justify-center gap-10 mt-20 overflow-hidden"
+      >
+        <img src="https://www.marketwise.io/icons/warnermusic.svg" alt="" />
+        <img src="https://www.marketwise.io/icons/onerpm.svg" alt="" />
+        <img src="https://www.marketwise.io/icons/universal.svg" alt="" />
+        <img src="https://www.marketwise.io/icons/zil.svg" alt="" />
+        <img src="https://www.marketwise.io/icons/liberty.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="container mx-auto my-32">
+      <div class="grid grid-cols-12 mx-5 md:mx-0">
+        <div
+          class="gradients overflow-hidden col-span-12 md:col-start-3 md:col-span-8 rounded-3xl flex flex-col items-center justify-center py-16 md:py-20"
+        >
+          <h1
+            class="text-3xl md:text-6xl text-white font-medium text-center mt-10"
+          >
+            Invest with
+            <span class="text-primary"
+              >Market <br class="black md:hidden" />
+              Wises</span
+            >
+            <br class="hidden md:block" />
+            instead of marketeers
+          </h1>
+          <button
+            class="btn bg-primary text-black text-md md:text-xl py-3 px-10 rounded-full my-10"
+          >
+            Contact us
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-zinc-900 mt-40 py-20">
+      <div class="container mx-auto flex flex-col gap-5 md:flex-row md:gap-0">
+        <div
+          class="flex-1 flex flex-col gap-2 items-start md:items-center justify-center"
+        >
+          <div class="ps-5 md:ps-0">
+            <div class="logo gap-2 flex items-center justify-start">
+              <svg
+                id="logo-38"
+                width="50"
+                height="20"
+                viewBox="0 0 78 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M55.5 0H77.5L58.5 32H36.5L55.5 0Z"
+                  class="ccustom"
+                  fill="#ffffff"
+                ></path>
+                <path
+                  d="M35.5 0H51.5L32.5 32H16.5L35.5 0Z"
+                  class="ccompli1"
+                  fill="#ffffff"
+                ></path>
+                <path
+                  d="M19.5 0H31.5L12.5 32H0.5L19.5 0Z"
+                  class="ccompli2"
+                  fill="#ffffff"
+                ></path>
+              </svg>
+              <span class="text-white text-xl">BrandName</span>
+            </div>
+            <div class="grid gap-2 mt-10">
+              <p class="text-zinc-400 text-sm text-start">Contact:</p>
+              <p class="text-zinc-400 text-sm text-start">
+                yourcompanymain@gmail.com
+              </p>
+              <p class="text-zinc-400 text-sm text-start">+91 3545 5435</p>
+            </div>
+            <div class="flex items-center justify-start gap-4 mt-4">
+              <a href="">
+                <img src="https://www.marketwise.io/icons/in.svg" alt="" />
+              </a>
+              <a href="">
+                <img src="https://www.marketwise.io/icons/yt.svg" alt="" />
+              </a>
+              <a href="">
+                <img src="https://www.marketwise.io/icons/tiktok.svg" alt="" />
+              </a>
+              <a href="">
+                <img src="https://www.marketwise.io/icons/ig.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex-1 flex flex-col items-start md:items-center justify-end"
+        >
+          <div class="flex flex-col gap-2 ps-5 md:ps-0">
+            <p class="text-zinc-400 text-sm text-start">© 2020 MarketWise TM</p>
+            <p class="text-zinc-400 text-sm text-start max-w-80">
+              Marketwise is part of Zil Global LLC, all rights reserved. The
+              logo and other Zil marks are trademarks and may be registered.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex-1 flex flex-col items-start md:items-center justify-end"
+        >
+          <div class="flex flex-col gap-2 ps-5 md:ps-0">
+            <a href="" class="text-zinc-400 text-sm text-start underline"
+              >Help Desk</a
+            >
+            <a href="" class="text-zinc-400 text-sm text-start underline"
+              >Privacy and Cookie Policy</a
+            >
+            <p class="text-zinc-400 text-sm text-start max-w-80 mt-5">
+              Designed by Manish Bagal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
